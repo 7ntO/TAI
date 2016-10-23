@@ -66,9 +66,15 @@ body {
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
+.row {
+    width: 100%;
+    text-align: center;
+}
+
 .marketing .col-lg-4 {
     margin-bottom: 20px;
     text-align: center;
+    width: auto;
 }
 
 .marketing h2 {
@@ -92,6 +98,13 @@ body {
     font-weight: 300;
     line-height: 1;
     letter-spacing: -1px;
+}
+
+/* Footer
+------------------------- */
+
+.footer-separator {
+    padding-top: 200px;
 }
 
 /* RESPONSIVE CSS
@@ -145,4 +158,61 @@ body {
 
 .dropdown-menu {
     text-align: center;
+}
+
+
+/* Formatowanie tekstu
+-------------------------------------------------- */
+
+#wyroznienie_cien {
+    font-size:16px;
+    color: #FF0000;
+    text-shadow:2px 3px 6px green;
+    font-style: italic;
+}
+
+#zastepowania_grafika {
+    width: 350px;
+    height: 75px;
+    background: url("../img/header-image.jpg");
+    text-indent: -9999px;
+}
+
+@font-face {
+    font-family: sans-serif2;
+    src: url('../fonts/licorice.ttf') format("truetype");
+}
+
+#osadzanie_fontow {
+    font-family: sans-serif2;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#niewidoczny_tekst {
+    visibility: hidden;
+}
+
+#selektory_pseudoklas::first-letter {
+    background-color: #2aabd2;
+    text-transform: capitalize;
+}
+
+#selektory_pseudoklas:hover {
+    color: #99CC66;
+}
+
+#column1 {
+    float:left;
+    width: 33%;
+}
+
+#column2 {
+    float:left;
+    width: 33%;
+}
+
+#column3 {
+    float:left;
+    width: 33%;
 }
