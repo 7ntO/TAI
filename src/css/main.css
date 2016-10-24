@@ -160,14 +160,13 @@ body {
     text-align: center;
 }
 
-
 /* Formatowanie tekstu
 -------------------------------------------------- */
 
 #wyroznienie_cien {
-    font-size:16px;
+    font-size: 16px;
     color: #FF0000;
-    text-shadow:2px 3px 6px green;
+    text-shadow: 2px 3px 6px green;
     font-style: italic;
 }
 
@@ -203,16 +202,118 @@ body {
 }
 
 #column1 {
-    float:left;
+    float: left;
     width: 33%;
 }
 
 #column2 {
-    float:left;
+    float: left;
     width: 33%;
 }
 
 #column3 {
-    float:left;
+    float: left;
     width: 33%;
+}
+
+/* Fozycjonowanie elementów strony
+-------------------------------------------------- */
+
+#zad2 {
+    padding: 5px;
+    background-color: green;
+    color: white;
+    width: 200px;
+    height: 150px;
+    font-weight: bold;
+    z-index: 5;
+}
+
+#zad2_2 {
+    border: 1px solid black;
+    padding: 5px;
+    background: silver;
+    color: black;
+    width: 200px;
+    height: 150px;
+    opacity: 0.5;
+    position: relative;
+    left: 100px;
+    bottom: 80px;
+    z-index: -1;
+}
+
+/* Tabele
+-------------------------------------------------- */
+
+#tabela1, #tabela1 tr, #tabela1 td {
+    border: dotted;
+    border-color: #7a43b6;
+}
+
+tr, td {
+    width: 120px;
+    height: 120px;
+}
+
+#tabela_grupa1 {
+    background-color: red;
+}
+
+#tabela_grupa2 {
+    background-color: lightblue;
+}
+
+#tabela_grupa3 {
+    background-color: darkgoldenrod;
+}
+
+/* Gradienty
+-------------------------------------------------- */
+
+#zadanie5_1 {
+    background: linear-gradient(45deg, white 20%, silver, white) fixed;
+    border-radius: 10px;
+    box-shadow:0 0 30px yellow;
+}
+
+#zadanie5_2 {
+    background: radial-gradient(250px 150px, silver, white) fixed;
+}
+
+#zadanie5_3 {
+    background:repeating-radial-gradient(black, white 10px) ;
+}
+
+/* Galeria
+-------------------------------------------------- */
+
+.gallery {
+    background: red;
+    margin: 0 auto;
+}
+
+.gallery img {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    height: auto;
+    background: white;
+    transition: all 1s ease;
+    border: 2px solid black;
+}
+
+.gallery img:hover {
+    transform: rotate(-360deg);
+    width: 400px;
+    transition: all 1s ease-in;
+    border: 5px solid blue;
+}
+
+/* CANVAS
+-------------------------------------------------- */
+
+canvas {
+    display: block;
+    margin: 10px auto;
 }
